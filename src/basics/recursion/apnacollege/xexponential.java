@@ -1,4 +1,4 @@
-package basics.recursion.level1;
+package basics.recursion.apnacollege;
 
 public class xexponential {
     public static int exponential(int x, int n){

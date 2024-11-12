@@ -1,4 +1,4 @@
-package basics.recursion.level1;
+package basics.recursion.w3resource;
 
 public class firstNNaturalNumber {
 
