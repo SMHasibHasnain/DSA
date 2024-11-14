@@ -9,7 +9,7 @@ public class XExponentialLogN {
         }
 
         //recursive way
-        int half = exponential( x, n/2);
+        int half = exponential( x, n/2); //if we don't do it, exponential function will call itself twice with same value. It will cause un-efficiency.
         if(n%2 == 0) {
             return half*half;
         } else {
