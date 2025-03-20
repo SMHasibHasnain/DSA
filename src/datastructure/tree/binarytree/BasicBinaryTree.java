@@ -1,8 +1,8 @@
-package datastructure.tree.binarytree.one;
+package datastructure.tree.binarytree;
 
 import java.util.Scanner;
 
-public class BasicBinaryTree {
+public class  BasicBinaryTree {
     private static class Node{
         int data;
         Node left;
