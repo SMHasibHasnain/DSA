@@ -22,12 +22,28 @@ public class BST {
         }
         return root;
     }
+    void inOrder(Node node) {
+        if(node == null) {
+            return;
+        }
+        inOrder(node.left);
+        System.out.println(node.data + "  ");
+        inOrder(node.right);
+    }
+    void postOrder(Node node) {
+        if(node == null) {
+            return;
+        }
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.println(node.data + "  ");
+    }
     void preOrder(Node node) {
         if(node == null) {
             return;
         }
-        preOrder(node.left);
         System.out.println(node.data + "  ");
+        preOrder(node.left);
         preOrder(node.right);
     }
     public static void main(String[] args) {
@@ -39,6 +55,11 @@ public class BST {
         tree1.insert(tree1.root, 6);
         tree1.insert(tree1.root, 15);
         tree1.insert(tree1.root, 25);
+        System.out.println("\nInorder Traversal: ");
+        tree1.inOrder(tree1.root);
+        System.out.println("\nPreorder Traversal: ");
         tree1.preOrder(tree1.root);
+        System.out.println("\nPostorder Travarsal: ");
+        tree1.postOrder(tree1.root);
     }
 }
